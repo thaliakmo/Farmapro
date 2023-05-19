@@ -1,12 +1,18 @@
 package com.ufmt.farmapro.cliente;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+
+import com.ufmt.farmapro.pedido.Pedido;
+import com.ufmt.farmapro.receita.Receita;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -35,6 +41,11 @@ public class Cliente {
     @Column(name = "telefone", length = 14)
     private String telefone;
 
+    @OneToMany(mappedBy = "cliente")
+    private List<Receita> receitas;
 
+    @OneToMany(mappedBy = "cliente")
+    private List<Pedido> pedidos;
+    
     
 }

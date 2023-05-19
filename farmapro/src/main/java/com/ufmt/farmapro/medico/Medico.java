@@ -1,12 +1,17 @@
 package com.ufmt.farmapro.medico;
 
+import java.util.List;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+
+import com.ufmt.farmapro.receita.Receita;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -30,5 +35,7 @@ public class Medico {
     @Column(name = "crm")
     private int crm;
 
-    
+    @OneToMany(mappedBy = "medico")
+    private List<Receita> receitas;
+ 
 }
