@@ -1,7 +1,6 @@
 package com.ufmt.farmapro.cliente;
 
 public class ClienteRequest {
-
     private String nome;
     private String email;
     private String endereco;
