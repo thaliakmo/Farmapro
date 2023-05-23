@@ -55,5 +55,8 @@ public class Receita {
     @ManyToOne
     @JoinColumn(name = "pedido_id")
     private Pedido pedido;
+
+    public void setData(java.util.Date data2) {
+    }
     
 }

@@ -21,7 +21,7 @@ public class ReceitaRequest {
         this.descricao = descricao;
     }
  
-    public boolean isReceitaValida() {
+    public boolean getReceitaValida() {
         return receitaValida;
     }
     public void setReceitaValida(boolean receitaValida) {

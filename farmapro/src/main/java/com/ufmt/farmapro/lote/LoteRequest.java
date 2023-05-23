@@ -13,7 +13,7 @@ public class LoteRequest {
         this.data = data;
     }
 
-    public boolean isProxVenc() {
+    public boolean getProxVenc() {
         return proxVenc;
     }
     public void setProxVenc(boolean proxVenc) {
