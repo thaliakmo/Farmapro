@@ -50,7 +50,7 @@ public class FornecedorController {
     }
   }
 
-  @PostMapping
+  @PostMapping(path = "/cadastrar")
   public ResponseEntity<Object> cadastrar(@RequestBody FornecedorRequest request){
     Fornecedor fornecedor = new Fornecedor();
     fornecedor.setNome(request.getNome());

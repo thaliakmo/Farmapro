@@ -50,7 +50,7 @@ public class ProdutoController {
     }
   }
 
-  @PostMapping
+  @PostMapping(path = "/cadastrar")
   public ResponseEntity<Object> cadastrar(@RequestBody ProdutoRequest request){
     Produto produto = new Produto();
     produto.setNome(request.getNome());

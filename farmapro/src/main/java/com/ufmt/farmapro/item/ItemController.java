@@ -50,7 +50,7 @@ public class ItemController {
     }
   }
 
-  @PostMapping
+  @PostMapping(path = "/cadastrar")
   public ResponseEntity<Object> cadastrar(@RequestBody ItemRequest request){ 
     Item item = new Item();
     item.setQtd(request.getQtd());

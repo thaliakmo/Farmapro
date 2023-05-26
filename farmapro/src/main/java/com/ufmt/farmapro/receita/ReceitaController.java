@@ -50,7 +50,7 @@ public class ReceitaController {
     }
   }
 
-  @PostMapping
+  @PostMapping(path = "/cadastrar")
   public ResponseEntity<Object> cadastrar(@RequestBody ReceitaRequest request){
     Receita receita = new Receita();
     receita.setDescricao(request.getDescricao());

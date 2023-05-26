@@ -50,7 +50,7 @@ public class FuncionarioController {
     }
   }
 
-  @PostMapping
+  @PostMapping(path = "/cadastrar")
   public ResponseEntity<Object> cadastrar(@RequestBody FuncionarioRequest request){
     Funcionario funcionario = new Funcionario();
     funcionario.setNome(request.getNome());

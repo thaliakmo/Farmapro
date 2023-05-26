@@ -51,7 +51,7 @@ public class PedidoController {
     }
   }
 
-  @PostMapping
+  @PostMapping(path = "/cadastrar")
   public ResponseEntity<Object> cadastrar(@RequestBody PedidoRequest request){
     Pedido pedido = new Pedido();
     pedido.setTotal(request.getTotal());

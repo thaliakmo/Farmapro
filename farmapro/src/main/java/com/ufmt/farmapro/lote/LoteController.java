@@ -50,7 +50,7 @@ public class LoteController {
     }
   }
 
-  @PostMapping
+  @PostMapping(path = "/cadastrar")
   public ResponseEntity<Object> cadastrar(@RequestBody LoteRequest request){ 
     Lote lote = new Lote();
     lote.setData(request.getData());

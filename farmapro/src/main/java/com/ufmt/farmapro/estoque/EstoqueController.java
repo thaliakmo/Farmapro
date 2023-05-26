@@ -50,7 +50,7 @@ public class EstoqueController {
     }
   }
 
-  @PostMapping
+  @PostMapping(path = "/cadastrar")
   public ResponseEntity<Object> cadastrar(@RequestBody EstoqueRequest request){
     Estoque estoque = new Estoque();
     estoque.setQtdAtual(request.getQtdAtual());

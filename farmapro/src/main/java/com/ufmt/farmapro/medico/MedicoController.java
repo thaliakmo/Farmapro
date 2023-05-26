@@ -50,7 +50,7 @@ public class MedicoController {
     }
   }
 
-  @PostMapping
+  @PostMapping(path = "/cadastrar")
   public ResponseEntity<Object> cadastrar(@RequestBody MedicoRequest request){
     Medico medico = new Medico();
     medico.setNome(request.getNome());
