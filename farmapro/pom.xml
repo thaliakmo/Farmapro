@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.ufmt</groupId>
-	<artifactId>GEPROTAQUIP</artifactId>
+	<artifactId>farmapro</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>GEPROTAQUIP</name>
-	<description>Controle de processos de aquisições de bens e serviços públicos</description>
+	<name>farmapro</name>
+	<description>Gerenciamento de pedidos, estoque e receita de uma farmacia</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
