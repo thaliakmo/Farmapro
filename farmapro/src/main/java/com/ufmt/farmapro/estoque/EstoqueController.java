@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ufmt.farmapro.lote.LoteRepository;
+
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -24,6 +26,7 @@ import lombok.RequiredArgsConstructor;
 public class EstoqueController {
   
   private final EstoqueRepository repository;
+  private final LoteRepository loteRepository;
 
   @GetMapping(path = "/")
   public List<Estoque> index(){
@@ -55,6 +58,7 @@ public class EstoqueController {
     Estoque estoque = new Estoque();
     estoque.setQtdAtual(request.getQtdAtual());
     estoque.setQtdMin(request.getQtdMin());
+    estoque.setLote(loteRepository.getReferenceById(request.getLoteId()));
 
     try {
       repository.save(estoque);
@@ -72,6 +76,7 @@ public class EstoqueController {
     estoque.setId(id);
     estoque.setQtdAtual(request.getQtdAtual());
     estoque.setQtdMin(request.getQtdMin());
+    estoque.setLote(loteRepository.getReferenceById(request.getLoteId()));
 
     try {
       repository.save(estoque);

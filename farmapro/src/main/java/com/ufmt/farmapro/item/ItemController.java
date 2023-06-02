@@ -16,6 +16,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ufmt.farmapro.pedido.PedidoRepository;
+import com.ufmt.farmapro.produto.ProdutoRepository;
+
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -24,6 +27,9 @@ import lombok.RequiredArgsConstructor;
 public class ItemController {
   
   private final ItemRepository repository;
+  private final ProdutoRepository produtoRepository;
+  private final PedidoRepository pedidoRepository;
+
 
   @GetMapping(path = "/")
   public List<Item> index(){
@@ -55,6 +61,8 @@ public class ItemController {
     Item item = new Item();
     item.setQtd(request.getQtd());
     item.setSubtotal(request.getSubtotal());
+    item.setProduto(produtoRepository.getReferenceById(request.getProdutoId()));
+    item.setPedido(pedidoRepository.getReferenceById(request.getPedidoId()));
 
    
 
@@ -75,6 +83,8 @@ public class ItemController {
     item.setId(id);
     item.setQtd(request.getQtd());
     item.setSubtotal(request.getSubtotal());
+    item.setProduto(produtoRepository.getReferenceById(request.getProdutoId()));
+    item.setPedido(pedidoRepository.getReferenceById(request.getPedidoId()));
 
     try {
       repository.save(item);

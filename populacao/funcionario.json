@@ -1,0 +1,62 @@
+[
+	{
+		"nome": "Clare Tran",
+		"email": "sed@outlook.edu",
+		"endereco": "166-4795 Odio Road",
+		"telefone": "(86)91662-8820"
+	},
+	{
+		"nome": "Walter Lloyd",
+		"email": "nunc@icloud.edu",
+		"endereco": "Ap #243-3075 Rutrum Rd.",
+		"telefone": "(15)91147-0038"
+	},
+	{
+		"nome": "Colton Briggs",
+		"email": "dui.in.sodales@yahoo.ca",
+		"endereco": "130-4518 Pede Rd.",
+		"telefone": "(30)98162-4245"
+	},
+	{
+		"nome": "Ivana Saunders",
+		"email": "est@icloud.org",
+		"endereco": "Ap #279-4230 Mattis St.",
+		"telefone": "(78)96012-8737"
+	},
+	{
+		"nome": "Seth Cooper",
+		"email": "lorem.ipsum@icloud.com",
+		"endereco": "P.O. Box 150, 2218 Donec St.",
+		"telefone": "(61)92553-7409"
+	},
+	{
+		"nome": "Abraham Leach",
+		"email": "non.feugiat@hotmail.net",
+		"endereco": "Ap #468-1354 Placerat Road",
+		"telefone": "(71)96336-6665"
+	},
+	{
+		"nome": "Gary Sharpe",
+		"email": "libero.donec@outlook.com",
+		"endereco": "417-1046 Curabitur Road",
+		"telefone": "(64)96132-5193"
+	},
+	{
+		"nome": "Frances Logan",
+		"email": "sem.ut.cursus@hotmail.com",
+		"endereco": "353-2532 Aliquam Ave",
+		"telefone": "(23)90677-8482"
+	},
+	{
+		"nome": "Maggy Bray",
+		"email": "vitae.aliquam.eros@yahoo.net",
+		"endereco": "490-9566 Nunc St.",
+		"telefone": "(52)95288-5897"
+	},
+	{
+		"nome": "Brent Perez",
+		"email": "tellus@outlook.com",
+		"endereco": "469-2878 Vivamus Street",
+		"telefone": "(75)96641-0675"
+	}
+]

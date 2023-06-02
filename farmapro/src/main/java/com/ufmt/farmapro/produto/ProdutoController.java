@@ -16,6 +16,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ufmt.farmapro.fornecedor.FornecedorRepository;
+
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -24,6 +26,7 @@ import lombok.RequiredArgsConstructor;
 public class ProdutoController {
   
   private final ProdutoRepository repository;
+  private final FornecedorRepository fornecedorRepository;
 
   @GetMapping(path = "/")
   public List<Produto> index(){
@@ -56,6 +59,7 @@ public class ProdutoController {
     produto.setNome(request.getNome());
     produto.setDescricao(request.getDescricao());
     produto.setValor(request.getValor());
+    produto.setFornecedor(fornecedorRepository.getReferenceById(request.getFornecedorId()));
 
     try {
       repository.save(produto);
@@ -74,6 +78,7 @@ public class ProdutoController {
     produto.setNome(request.getNome());
     produto.setDescricao(request.getDescricao());
     produto.setValor(request.getValor());
+    produto.setFornecedor(fornecedorRepository.getReferenceById(request.getFornecedorId()));
 
     try {
       repository.save(produto);

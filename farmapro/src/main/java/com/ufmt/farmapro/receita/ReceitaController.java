@@ -16,6 +16,10 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ufmt.farmapro.cliente.ClienteRepository;
+import com.ufmt.farmapro.medico.MedicoRepository;
+import com.ufmt.farmapro.pedido.PedidoRepository;
+
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -24,6 +28,9 @@ import lombok.RequiredArgsConstructor;
 public class ReceitaController {
   
   private final ReceitaRepository repository;
+  private final ClienteRepository clienteRepository;
+  private final MedicoRepository medicoRepository;
+  private final PedidoRepository pedidoRepository;
 
   @GetMapping(path = "/")
   public List<Receita> index(){
@@ -56,6 +63,10 @@ public class ReceitaController {
     receita.setDescricao(request.getDescricao());
     receita.setData(request.getData());
     receita.setReceitaValida(request.getReceitaValida());
+    receita.setCliente(clienteRepository.getReferenceById(request.getClienteId()));
+    receita.setMedico(medicoRepository.getReferenceById(request.getMedicoId()));
+    receita.setPedido(pedidoRepository.getReferenceById(request.getPedidoId()));
+
 
     try {
       repository.save(receita);
@@ -74,6 +85,10 @@ public class ReceitaController {
     receita.setDescricao(request.getDescricao());
     receita.setData(request.getData());
     receita.setReceitaValida(request.getReceitaValida());
+    receita.setCliente(clienteRepository.getReferenceById(request.getClienteId()));
+    receita.setMedico(medicoRepository.getReferenceById(request.getMedicoId()));
+    receita.setPedido(pedidoRepository.getReferenceById(request.getPedidoId()));
+    
 
     try {
       repository.save(receita);

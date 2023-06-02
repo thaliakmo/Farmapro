@@ -5,6 +5,7 @@ import java.util.Date;
 public class LoteRequest {
     private Date data;
     private boolean proxVenc;
+    private int produtoId;
 
     public Date getData() {
         return data;
@@ -18,6 +19,13 @@ public class LoteRequest {
     }
     public void setProxVenc(boolean proxVenc) {
         this.proxVenc = proxVenc;
+    }
+
+    public int getProdutoId() {
+        return produtoId;
+    }
+    public void setProdutoId(int produtoId) {
+        this.produtoId = produtoId;
     }
     
 }

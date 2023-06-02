@@ -1,0 +1,52 @@
+[
+	{
+		"total": 116.84,
+		"clienteId": 1,
+		"funcionarioId": 1
+	},
+	{
+		"total": 114.38,
+		"clienteId": 2,
+		"funcionarioId": 8
+	},
+	{
+		"total": 121.79,
+		"clienteId": 3,
+		"funcionarioId": 4
+	},
+	{
+		"total": 118.16,
+		"clienteId": 4,
+		"funcionarioId": 8
+	},
+	{
+		"total": 116.11,
+		"clienteId": 5,
+		"funcionarioId": 3
+	},
+	{
+		"total": 116.47,
+		"clienteId": 6,
+		"funcionarioId": 4
+	},
+	{
+		"total": 117.20,
+		"clienteId": 7,
+		"funcionarioId": 4
+	},
+	{
+		"total": 122.56,
+		"clienteId": 8,
+		"funcionarioId": 6
+	},
+	{
+		"total": 117.30,
+		"clienteId": 9,
+		"funcionarioId": 9
+	},
+	{
+		"total": 117.57,
+		"clienteId": 10,
+		"funcionarioId": 9
+	}
+]

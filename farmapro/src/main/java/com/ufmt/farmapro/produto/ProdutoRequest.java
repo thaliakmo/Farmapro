@@ -4,6 +4,7 @@ public class ProdutoRequest {
     private String nome;
     private String descricao;
     private double valor;
+    private int fornecedorId;
 
     public String getNome() {
         return nome;
@@ -24,6 +25,13 @@ public class ProdutoRequest {
     }
     public void setValor(double valor) {
         this.valor = valor;
+    }
+
+    public int getFornecedorId() {
+        return fornecedorId;
+    }
+    public void setFornecedorId(int fornecedorId) {
+        this.fornecedorId = fornecedorId;
     }
 
 }

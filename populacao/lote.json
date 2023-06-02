@@ -1,0 +1,52 @@
+[
+	{
+		"data": "2023-09-27",
+		"prox_venc": "Não",
+		"produtoId": 1
+	},
+	{
+		"data": "2023-09-17",
+		"prox_venc": "Sim",
+		"produtoId": 2
+	},
+	{
+		"data": "2024-04-29",
+		"prox_venc": "Sim",
+		"produtoId": 3
+	},
+	{
+		"data": "2023-07-27",
+		"prox_venc": "Sim",
+		"produtoId": 4
+	},
+	{
+		"data": "2023-05-12",
+		"prox_venc": "Sim",
+		"produtoId": 5
+	},
+	{
+		"data": "2024-01-20",
+		"prox_venc": "Sim",
+		"produtoId": 6
+	},
+	{
+		"data": "2023-07-29",
+		"prox_venc": "Sim",
+		"produtoId": 7
+	},
+	{
+		"data": "2023-02-28",
+		"prox_venc": "Sim",
+		"produtoId": 8
+	},
+	{
+		"data": "2023-05-31",
+		"prox_venc": "Não",
+		"produtoId": 9
+	},
+	{
+		"data": "2022-08-02",
+		"prox_venc": "Não",
+		"produtoId": 10
+	}
+]

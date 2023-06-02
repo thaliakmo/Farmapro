@@ -1,0 +1,62 @@
+[
+	{
+		"nome": "IVERMECTINA-VMC",
+		"descricao": "orci lobortis augue scelerisque mollis. Phasellus libero mauris, aliquam eu,",
+		"valor": 23.19,
+		"fornecedorId": 1
+	},
+	{
+		"nome": "RINOSORO",
+		"descricao": "leo, in lobortis tellus justo sit amet nulla. Donec non",
+		"valor": 18.70,
+		"fornecedorId": 2
+	},
+	{
+		"nome": "DIAD",
+		"descricao": "dignissim. Maecenas ornare egestas ligula. Nullam feugiat placerat velit. Quisque",
+		"valor": 19.24,
+		"fornecedorId": 3
+	},
+	{
+		"nome": "HIDROCLOROTIAZIDA-N.Q",
+		"descricao": "et, euismod et, commodo at, libero. Morbi accumsan laoreet ipsum.",
+		"valor": 22.11,
+		"fornecedorId": 4
+	},
+	{
+		"nome": "REPOFLOR",
+		"descricao": "at augue id ante dictum cursus. Nunc mauris elit, dictum",
+		"valor": 21.35,
+		"fornecedorId": 5
+	},
+	{
+		"nome": "DIPIMED",
+		"descricao": "urna justo faucibus lectus, a sollicitudin orci sem eget massa.",
+		"valor": 24.85,
+		"fornecedorId": 6
+	},
+	{
+		"nome": "NARIDRIN",
+		"descricao": "aliquet molestie tellus. Aenean egestas hendrerit neque. In ornare sagittis",
+		"valor": 24.49,
+		"fornecedorId": 7
+	},
+	{
+		"nome": "HIDROCLOROTIAZIDA-TTB",
+		"descricao": "velit. Aliquam nisl. Nulla eu neque pellentesque massa lobortis ultrices.",
+		"valor": 23.31,
+		"fornecedorId": 8
+	},
+	{
+		"nome": "SORO",
+		"descricao": "sem magna nec quam. Curabitur vel lectus. Cum sociis natoque",
+		"valor": 21.15,
+		"fornecedorId": 9
+	},
+	{
+		"nome": "TADALAFILA-EUF",
+		"descricao": "at, libero. Morbi accumsan laoreet ipsum. Curabitur consequat, lectus sit",
+		"valor": 19.96,
+		"fornecedorId": 10
+	}
+]

@@ -1,0 +1,52 @@
+[
+	{
+		"qtd_atual": 17,
+		"qtd_min": 1,
+		"loteId": 1
+	},
+	{
+		"qtd_atual": 8,
+		"qtd_min": 8,
+		"loteId": 2
+	},
+	{
+		"qtd_atual": 10,
+		"qtd_min": 1,
+		"loteId": 3
+	},
+	{
+		"qtd_atual": 14,
+		"qtd_min": 3,
+		"loteId": 4
+	},
+	{
+		"qtd_atual": 17,
+		"qtd_min": 2,
+		"loteId": 5
+	},
+	{
+		"qtd_atual": 11,
+		"qtd_min": 7,
+		"loteId": 6
+	},
+	{
+		"qtd_atual": 18,
+		"qtd_min": 6,
+		"loteId": 7
+	},
+	{
+		"qtd_atual": 11,
+		"qtd_min": 5,
+		"loteId": 8
+	},
+	{
+		"qtd_atual": 14,
+		"qtd_min": 8,
+		"loteId": 9
+	},
+	{
+		"qtd_atual": 12,
+		"qtd_min": 6,
+		"loteId": 10
+	}
+]

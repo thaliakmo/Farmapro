@@ -17,6 +17,9 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.ufmt.farmapro.cliente.ClienteRepository;
+import com.ufmt.farmapro.funcionario.FuncionarioRepository;
+
 import lombok.RequiredArgsConstructor;
 
 @RestController
@@ -25,6 +28,9 @@ import lombok.RequiredArgsConstructor;
 public class PedidoController {
   
   private final PedidoRepository repository;
+  private final ClienteRepository clienteRepository;
+  private final FuncionarioRepository funcionarioRepository;
+
 
   @GetMapping(path = "/")
   public List<Pedido> index(){
@@ -55,6 +61,8 @@ public class PedidoController {
   public ResponseEntity<Object> cadastrar(@RequestBody PedidoRequest request){
     Pedido pedido = new Pedido();
     pedido.setTotal(request.getTotal());
+    pedido.setCliente(clienteRepository.getReferenceById(request.getClienteId()));
+    pedido.setFuncionario(funcionarioRepository.getReferenceById(request.getFuncionarioId()));
 
     try {
       repository.save(pedido);
@@ -71,6 +79,8 @@ public class PedidoController {
     Pedido pedido = new Pedido();
     pedido.setId(id);
     pedido.setTotal(request.getTotal());
+    pedido.setCliente(clienteRepository.getReferenceById(request.getClienteId()));
+    pedido.setFuncionario(funcionarioRepository.getReferenceById(request.getFuncionarioId()));
 
     try {
       repository.save(pedido);
